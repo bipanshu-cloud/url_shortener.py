@@ -1,0 +1,6 @@
+#Introduction to the project
+This script is designed to take a long URL input from the user and convert it into a shortened URL using the TinyURL service. 
+URL shortening is a technique on the internet in which a long URL can be made substantially shorter and still direct users to the desired page. 
+This is particularly useful for sharing links on social media, emails, or other platforms where character count is limited.
+
+
