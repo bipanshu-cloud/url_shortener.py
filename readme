@@ -1,6 +1,19 @@
-#Introduction to the project
-This script is designed to take a long URL input from the user and convert it into a shortened URL using the TinyURL service. 
-URL shortening is a technique on the internet in which a long URL can be made substantially shorter and still direct users to the desired page. 
-This is particularly useful for sharing links on social media, emails, or other platforms where character count is limited.
 
 
+URL Shortener
+A simple and efficient URL shortener built with FastAPI and Python, allowing users to convert long URLs into shorter, easily shareable links. The project also includes an SQLite database for storing URLs and their shortened versions.
+
+Features
+1.URL Shortening: Converts long URLs into concise, manageable links.
+2.Database Storage: Uses SQLite to store original and shortened URLs.
+3.Redirection: Redirects shortened links to the original URLs.
+4.Custom Short URLs: Allows custom aliases for links.
+5.CRUD Operations: Provides create, read, update, and delete functionality for URLs.
+6.Auto-Generated Documentation: FastAPI's interactive API docs for quick testing.
+
+Technologies Used
+1.FastAPI: Backend framework for API development.
+2.SQLite: Lightweight database for URL storage.
+3.Pydantic: Data validation for request and response models.
+4.Uvicorn: ASGI server for FastAPI.
+5.HTTP Status Codes: For effective error handling.
