@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #2980b9;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #3498db;
+        }
+        .shortened-url {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>URL Shortener</h1>
+    <form action="/shorten" method="post">
+        <input type="text" name="url" placeholder="Enter URL to shorten" required>
+        <button type="submit">Shorten URL</button>
+    </form>
+    {% if shortened_url %}
+        <div class="shortened-url">
+            <p>Original URL: <strong>{{ original_url }}</strong></p>
+            <p>Shortened URL: <a href="{{ shortened_url }}">{{ shortened_url }}</a></p>
+        </div>
+    {% endif %}
+</body>
+</html>
